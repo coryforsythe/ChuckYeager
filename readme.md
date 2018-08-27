@@ -37,7 +37,7 @@ The following properties of the JSON object can be adjusted or removed (in which
 |**Property**|**Usage**|**Default Value**|
 |---|---|---|
 |method|Defines the HTTP Method for the Express Route|GET|
-|path|Defines the relative path for the route (should be unique across the directory)||
+|path|Defines the relative path for the route (should be unique across the directory)|/|
 |statusCode|The HTTP Code to send with the response|200|
 |body|JSON body to send with the response|{}|
 
