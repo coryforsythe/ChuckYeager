@@ -1,0 +1,23 @@
+[2018-08-27T09:12:44.451] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:12:44.455] [DEBUG] default - Loading model example.json
+[2018-08-27T09:15:06.954] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:15:06.958] [DEBUG] default - Loading model example.json
+[2018-08-27T09:15:06.959] [ERROR] default - Unable to load model example.json: Error: ENOENT: no such file or directory, open 'example.json'
+[2018-08-27T09:15:25.958] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:15:25.962] [DEBUG] default - Loading model example.json
+[2018-08-27T09:15:25.963] [ERROR] default - Unable to load model example.json: SyntaxError: Unexpected token : in JSON at position 10
+[2018-08-27T09:15:50.476] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:15:50.480] [DEBUG] default - Loading model example.json
+[2018-08-27T09:22:48.586] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:22:48.590] [DEBUG] default - Loading model example.json
+[2018-08-27T09:22:48.590] [INFO] default - Routing [get /examples (200)]
+[2018-08-27T09:22:57.299] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:22:57.303] [DEBUG] default - Loading model example.json
+[2018-08-27T09:22:57.303] [INFO] default - Routing [ get /examples (200) ]
+[2018-08-27T09:24:18.948] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:24:18.952] [DEBUG] default - Loading model example.json
+[2018-08-27T09:24:18.952] [INFO] default - Routing [ get /examples (200) ]
+[2018-08-27T09:31:30.791] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T09:31:30.795] [DEBUG] default - Loading model example.json
+[2018-08-27T09:31:30.795] [INFO] default - Routing [ get /examples (200) ]
+[2018-08-27T09:31:32.069] [DEBUG] default - [::1] Responding to /examples

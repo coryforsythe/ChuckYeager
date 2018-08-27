@@ -1,0 +1,12 @@
+{
+  "response":{
+    "method":"get",
+    "path":"/examples",
+    "statusCode":200,
+    "body":{
+      "examples":[
+        {"firstName":"John","lastname":"Doe"}
+      ]
+    }
+  }
+}

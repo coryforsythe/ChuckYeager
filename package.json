@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/coryforsythe/ChuckYeager/issues"
   },
-  "homepage": "https://github.com/coryforsythe/ChuckYeager#readme"
+  "homepage": "https://github.com/coryforsythe/ChuckYeager#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "json2yaml": "^1.1.0",
+    "jsontoxml": "^1.0.0",
+    "jsonxml": "^1.0.0",
+    "log4js": "^3.0.5"
+  }
 }
