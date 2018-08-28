@@ -1,6 +1,6 @@
 {
   "name": "chuckyeager",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Rapid API mocking tool for integration development",
   "main": "index.js",
   "scripts": {
