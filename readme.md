@@ -14,7 +14,9 @@ npm install chuckyeager
 ## Usage
 
 ### 1: Configure the models
-The express server will create routes and response handlers based upon the contents of the Models sub-directory in this project. To create mocks, simply place a JSON file in that directory that conforms to this structure:
+The express server will create routes and response handlers based upon the contents of the Models sub-directory in this project. Each JSON model will be available at the specified path. In addition, routes will automatically be created so that a request made appending /YAML or /XML will deliver the model data in those respective formats.
+
+To create mocks, simply place a JSON file in that directory that conforms to this structure:
 
 ```
 {
@@ -46,3 +48,11 @@ The following properties of the JSON object can be adjusted or removed (in which
 ```
 node index.js
 ```
+
+## Test it out
+From the terminal, curl the local server and request the examples model(s):
+
+```
+curl http://localhost/examples
+curl http://localhost/examples/xml
+curl http://localhost/examples/yaml
