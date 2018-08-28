@@ -41,6 +41,10 @@ function loadModels(){
         var method=response.method || 'get';
         var path=response.path || '/';
 
+        //Ensure trailing /  -> Assists in building paths like /yaml /xml etc.
+        if(!path.endsWith('/'))
+          path=path+'/';
+
         //Emit route to express dynamically
         app[method](path,function(req,res){
           var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
@@ -48,6 +52,24 @@ function loadModels(){
           res.type('application/json; charset=utf8');
           res.status(code);
           res.send(body);
+        });
+
+        //Emit YAML route to express dynamically
+        app[method](path+'yaml/',function(req,res){
+          var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+          logger.debug("["+ip+"] Responding to "+path+'yaml/');
+          res.type('application/x-yaml; charset=utf8');
+          res.status(code);
+          res.send(jsonyaml.stringify(body));
+        });
+
+        //Emit XML route to express dynamically
+        app[method](path+'xml/',function(req,res){
+          var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+          logger.debug("["+ip+"] Responding to "+path+'xml/');
+          res.type('application/xml; charset=utf8');
+          res.status(code);
+          res.send(jsonxml(body));
         });
 
         logger.info("Routing [ "+method+" "+path+" ("+code+") ]");
