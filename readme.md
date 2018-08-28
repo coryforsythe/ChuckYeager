@@ -53,6 +53,6 @@ node index.js
 From the terminal, curl the local server and request the examples model(s):
 
 ```
-curl http://localhost/examples
-curl http://localhost/examples/xml
-curl http://localhost/examples/yaml
+curl http://localhost:8081/examples
+curl http://localhost:8081/examples/xml
+curl http://localhost:8081/examples/yaml

@@ -30,3 +30,6 @@
 [2018-08-27T20:33:08.813] [INFO] default - Routing [ get /examples/ (200) ]
 [2018-08-27T20:33:10.057] [DEBUG] default - [::1] Responding to /examples/yaml/
 [2018-08-27T20:33:14.603] [DEBUG] default - [::1] Responding to /examples/xml/
+[2018-08-27T20:38:19.179] [INFO] default - Service Is Alive on Port 8081
+[2018-08-27T20:38:19.183] [DEBUG] default - Loading model example.json
+[2018-08-27T20:38:19.184] [INFO] default - Routing [ get /examples/ (200) ]
